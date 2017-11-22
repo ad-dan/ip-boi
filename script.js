@@ -4,7 +4,7 @@ const showData = data => {
   $element.innerText = ip
 }
 const showError = err => {
-  $element.innerHTML = "Problem while fetching your IP address"
+  $element.innerHTML = "Please disable your AdBlock"
 }
 fetch("https://freegeoip.net/json/")
   .then(response => response.json())
