@@ -1,0 +1,76 @@
+body{
+  margin: 0;
+}
+#flex-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  background: #3a7bd5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3a6073, #3a7bd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  color: #fff;  
+  
+}
+#ip-data {
+  width: 500px;
+  height: 200px;
+  text-align: center;
+  margin: 0 auto;
+}
+#data {
+  font-size: 60px;
+  text-shadow: 1px 1px 10px lightblue;
+}
+#text {
+
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: 100;
+}
+#surfer-container {
+  width: 100%;
+}
+#surfer {
+  height: 5px;
+  width: 25px;
+  margin: 0;
+  background-color: #Fff;
+  animation: 5s infinite alternate surf;
+}
+
+#circle-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  margin: 15px auto;
+}
+.circle {
+  background: #03A9F4;
+  height: 50%;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+#c1 {
+  animation: 0.2s infinite alternate blink;
+}
+#c2 {
+  animation: 0.2s infinite alternate-reverse blink;
+}
+@keyframes blink {
+  from {
+      opacity: 0;
+  } to {
+      opacity: 100%;
+  }
+}
+@keyframes surf {
+  from {
+    margin-left: 0;
+  } to {
+    margin-left: 94%;
+  }
+}
