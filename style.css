@@ -14,13 +14,14 @@ body{
   
 }
 #ip-data {
-  width: 500px;
+  min-width: 100vw;
+  max-width: 500px;
   height: 200px;
   text-align: center;
   margin: 0 auto;
 }
 #data {
-  font-size: 60px;
+  font-size: 50px;
   text-shadow: 1px 1px 10px lightblue;
 }
 #text {
@@ -30,12 +31,14 @@ body{
   font-weight: 100;
 }
 #surfer-container {
-  width: 100%;
+  width: 350px;
+  margin: 0 auto;
 }
 #surfer {
   height: 5px;
   width: 25px;
-  margin: 0;
+  position: relative;
+  left: 0px;
   background-color: #Fff;
   animation: 5s infinite alternate surf;
 }
@@ -69,8 +72,9 @@ body{
 }
 @keyframes surf {
   from {
-    margin-left: 0;
+    left: 10px;
   } to {
-    margin-left: 94%;
+    left: 325px;
+    
   }
 }
